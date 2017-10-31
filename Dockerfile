@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Roberto Aguilar <roberto.c.aguilar@gmail.com>
 
 RUN apk update && \
-  apk add build-base ca-certificates curl libffi-dev ruby ruby-dev tar
+  apk add build-base ca-certificates curl libffi-dev openssl ruby ruby-dev tar
 
 RUN curl -O https://rubygems.org/downloads/rubygems-update-2.6.8.gem && \
   gem install --local rubygems-update-2.6.8.gem --no-rdoc --no-ri && \
